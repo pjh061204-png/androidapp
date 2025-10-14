@@ -1,12 +1,14 @@
 package com.example.w04
 
 import android.R.attr.data
+import android.content.res.Configuration
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.Box
+import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
@@ -34,7 +36,7 @@ class MainActivity : ComponentActivity() {
         enableEdgeToEdge()
         setContent {
             MyApplicationTheme {
-                ProfileCard()
+                ProfileCard(Profile("박주환", "고양이 프로필."))
             }
         }
     }
@@ -42,7 +44,7 @@ class MainActivity : ComponentActivity() {
 data class Message(val name:String,val msg:String)
 data class Profile(val name:String,val intro:String)
 @Composable
-fun ProfileCard() {
+fun ProfileCard(data: Profile) {
     Row(
 
         modifier = Modifier.padding(all = 8.dp),
@@ -50,13 +52,13 @@ fun ProfileCard() {
     ) {
         Image(
 
-            painter = painterResource(R.drawable.pang),
+            painter = painterResource(R.drawable.cat),
             contentDescription = "연락처 프로필 사진",
             modifier = Modifier
                 .size(60.dp)
                 .clip(CircleShape)
         )
-        Spacer(modifier = Modifier.width(8.dp)) .
+        Spacer(modifier = Modifier.width(8.dp))
         Column(
             modifier = Modifier.padding(16.dp)
         ) {
@@ -78,3 +80,14 @@ fun ProfileCard() {
 }
 
 
+@Preview(
+    name = "Profile Card Dark Mode",
+    uiMode = Configuration.UI_MODE_NIGHT_YES,
+    showBackground = true
+)
+@Composable
+fun PreviewProfileCard() {
+    MyApplicationTheme {
+        ProfileCard(Profile("박주환", "고양이 프로필."))
+    }
+}
