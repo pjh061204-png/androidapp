@@ -23,4 +23,4 @@ rootProject.name = "My Application"
 include(":app")
 include(":w04")
 include(":w05")
-include(":app:w06")
+include(":w06")
