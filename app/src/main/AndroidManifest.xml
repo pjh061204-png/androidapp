@@ -10,12 +10,20 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
+<<<<<<< HEAD
         android:theme="@style/Theme.NumberGuessGame">
+=======
+        android:theme="@style/Theme.MyApplication">
+>>>>>>> f62de2ccc23b3665de9fc7e8b1a5724b787aa99a
         <activity
             android:name=".MainActivity"
             android:exported="true"
             android:label="@string/app_name"
+<<<<<<< HEAD
             android:theme="@style/Theme.NumberGuessGame">
+=======
+            android:theme="@style/Theme.MyApplication">
+>>>>>>> f62de2ccc23b3665de9fc7e8b1a5724b787aa99a
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

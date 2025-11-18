@@ -1,3 +1,7 @@
 <resources>
+<<<<<<< HEAD
     <string name="app_name">NumberGuessGame</string>
+=======
+    <string name="app_name">My Application</string>
+>>>>>>> f62de2ccc23b3665de9fc7e8b1a5724b787aa99a
 </resources>

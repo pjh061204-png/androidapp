@@ -19,6 +19,14 @@ dependencyResolutionManagement {
     }
 }
 
+<<<<<<< HEAD
 rootProject.name = "NumberGuessGame"
 include(":app")
  
+=======
+rootProject.name = "My Application"
+include(":app")
+include(":w04")
+include(":w05")
+include(":w06")
+>>>>>>> f62de2ccc23b3665de9fc7e8b1a5724b787aa99a

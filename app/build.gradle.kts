@@ -5,11 +5,19 @@ plugins {
 }
 
 android {
+<<<<<<< HEAD
     namespace = "com.example.numberguessgame"
     compileSdk = 36
 
     defaultConfig {
         applicationId = "com.example.numberguessgame"
+=======
+    namespace = "com.example.myapplication"
+    compileSdk = 36
+
+    defaultConfig {
+        applicationId = "com.example.myapplication"
+>>>>>>> f62de2ccc23b3665de9fc7e8b1a5724b787aa99a
         minSdk = 30
         targetSdk = 36
         versionCode = 1
